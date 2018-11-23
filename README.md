@@ -16,7 +16,7 @@
 
 apt-get update && apt-get install -y git
 
-clone this repo in the root of your user profile
+
 cd ~/
 git clone https://github.com/creationix/nvm.git .nvm
 cd ~/.nvm
