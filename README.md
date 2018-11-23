@@ -14,7 +14,7 @@
 
 ## How to prepare environment on server?
 
-apt-get update && apt-get install -y git
+> apt-get update && apt-get install -y git
 
 cd ~/
 
