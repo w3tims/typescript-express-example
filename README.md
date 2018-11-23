@@ -15,8 +15,6 @@
 ## How to prepare environment on server?
 
 apt-get update && apt-get install -y git
-
-
 cd ~/
 
 git clone https://github.com/creationix/nvm.git .nvm
