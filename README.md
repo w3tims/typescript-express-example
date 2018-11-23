@@ -16,25 +16,23 @@
 
 > apt-get update && apt-get install -y git
 
-cd ~/
+> cd ~/
 
-git clone https://github.com/creationix/nvm.git .nvm
+> git clone https://github.com/creationix/nvm.git .nvm
 
-cd ~/.nvm
+> cd ~/.nvm
 
-git checkout v0.33.11
+> git checkout v0.33.11
 
-. nvm.sh
+> . nvm.sh
 
 
 
 Now add these lines to your ~/.bashrc, ~/.profile, or ~/.zshrc file to have it automatically sourced upon login: (you may have to add to more than one of the above files)
 
-export NVM_DIR="$HOME/.nvm"
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+>export NVM_DIR="$HOME/.nvm"
+>[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+>[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 
