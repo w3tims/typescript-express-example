@@ -45,3 +45,7 @@ logging into mysql shell: (might be other then "root")
 creating database: 
 
 > CREATE DATABASE MY_DATABASE_NAME
+
+install pm2:
+
+> npm install pm2@latest -g
