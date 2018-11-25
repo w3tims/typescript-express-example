@@ -1,24 +1,24 @@
-import {postGetAllAction} from "./controller/PostGetAllAction";
-import {postGetByIdAction} from "./controller/PostGetByIdAction";
-import {postSaveAction} from "./controller/PostSaveAction";
+import {planetGetAllAction} from "./controller/PlanetGetAllAction";
+import {planetSaveAction} from "./controller/PlanetSaveAction";
+import {planetGetByIdAction} from "./controller/PlanetGetByIdAction";
 
 /**
  * All application routes.
  */
 export const AppRoutes = [
     {
-        path: "/posts",
+        path: "/planets/:id",
         method: "get",
-        action: postGetAllAction
+        action: planetGetByIdAction
     },
     {
-        path: "/posts/:id",
+        path: "/planets",
         method: "get",
-        action: postGetByIdAction
+        action: planetGetAllAction
     },
     {
-        path: "/posts",
+        path: "/planets",
         method: "post",
-        action: postSaveAction
-    }
+        action: planetSaveAction
+    },
 ];
