@@ -16,6 +16,9 @@ export async function planetSaveAction(request: Request, response: Response) {
     // save received post
     await planetRepository.save(newPlanet);
 
+    // TO DO: check if to allow requests from certain sources
+    response.header("Access-Control-Allow-Origin", "*");
+
     // return saved post back
     response.send(newPlanet);
 }

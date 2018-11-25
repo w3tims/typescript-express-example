@@ -13,6 +13,7 @@ export async function planetGetAllAction(request: Request, response: Response) {
     // load a post by a given post id
     const planets = await planetRepository.find();
 
+    // TO DO: check if to allow requests from certain sources
     response.header("Access-Control-Allow-Origin", "*");
 
     // return loaded posts
