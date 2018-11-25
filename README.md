@@ -12,6 +12,12 @@
 1. install `typeorm` globally: `npm i -g typeorm`
 2. run `typeorm -h` to show list of available commands
 
+## How to boot project?
+
+> npm i
+
+> pm2 start npm -- start
+
 ## How to prepare environment on server?
 
 > apt-get update && apt-get install -y git
